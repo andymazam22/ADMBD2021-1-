@@ -1,0 +1,122 @@
+/*INSERCION DE DATOS EN LA TABLA CLIENTE*/
+insert into cliente values ('000001','1301118712','CRISTIANO RONALDO', 'DOS SANTOS AVEIRO','PORTUGAL', '05/02/1985','CR7@GMAIL.COM','75 KG','0938456758','187 CM');
+insert into cliente values ('000002','1341118712','LIONEL ANDRES', 'MESSI CUCCITTINI','ARGENTINA', '24/06/1987','MESSI@GMAIL.COM','72 KG','0987656758','170 CM');
+insert into cliente values ('000003','1308567712','JUANITO SEGUNDO', 'ALIMAÑA RODRIGO','AV. 13 CALLE 15', '05/02/2000','JSA@GMAIL.COM','70 KG','0965398726','185 CM');
+insert into cliente values ('000004','1301819712','TEGO RAMON', 'ALAYA RAMIREZ','CALLE 13 AV.24', '01/01/1990','TEGO@GMAIL.COM','69 KG','0975026758','185 CM');
+insert into cliente values ('000005','1111118712','RAMON RAUL', 'AYALA MERO','CALLE 1 AV.5', '11/02/1991','RR@GMAIL.COM','75 KG','0938983658','187 CM');
+insert into cliente values ('000006','1376388712','DIEGO DANIEL', 'MARADONA','CALLE ROSARIO', '30/03/1985','D10@GMAIL.COM','65 KG','0938457802','180 CM');
+insert into cliente values ('000007','1373078712','NEYMAR JUNIOR', 'DOS SANTOS','CALLE RIO', '10/12/1999','NEY11@GMAIL.COM','70 KG','0936109758','187 CM');
+insert into cliente values ('000008','1301619724','RICARDO JUAN', 'MERO MERO','AVENIDA SAN JUAN', '22/02/1997','RJUAN@GMAIL.COM','60 KG','0978377758','175 CM');
+insert into cliente values ('000009','1300000712','PELE JUAN', 'DOS SANTOS RIVERO','CALLE BRASILIA', '06/06/1990','PELE@GMAIL.COM','78 KG','09762345158','180 CM');
+insert into cliente values ('000010','1872572134','RONALDO JUNIOR', 'DOS SANTOS AVEIRO','CALLE SAN PABLO', '26/02/1998','RJ@GMAIL.COM','70 KG','0946456758','180 CM');
+select * from cliente
+delete from cliente
+
+
+/*INSERCION DE DATOS EN LA TABLA ESPECIALIDAD*/
+insert into especialidad values ('8828','FORMACION EN MUSCULACION Y FITNES');
+insert into especialidad values ('7465','FORMACION EN CARDIO');
+insert into especialidad values ('3454','FORMACION EN VENTAS');
+insert into especialidad values ('2132','FORMACION EN POTENCIA DE PESO');
+select * from especialidad
+
+
+/*INSERCION DE DATOS EN LA TABLA EMPLEADO*/
+insert into empleado values ('000001','8828','1398768712','RODRIGO JOSE', 'CEDEÑO DELGADO','MANTA BEACH','0956123243','JC@GMAIL.COM','ENTRENADOR','10/12/1985');
+insert into empleado values ('000002','7465','1398765432','SANTIAGO JESUS', 'DELGADO CEDEÑO','CALLE 1 AV. 4', '0987624687','SDD@GMAIL.COM','VENDEDOR','11/02/1987');
+insert into empleado values ('000003','3454','1343657890','JESUS JOSE', 'MORA DELGADO','MANTA HIGH', '0976654356','JJM@GMAIL.COM','ENTRENADOR','12/03/1986');
+insert into empleado values ('000004','2132','1343127766','JORGE LUIS', 'SEGUNDO MERO','MANTA CITY', '0912345677','JLS@GMAIL.COM','ENTRENADOR','13/04/1989');
+select * from EMPLEADO
+
+
+/*INSERCION DE DATOS EN LA TABLA PRODUCTO*/
+insert into producto values ('100','PROTEINA','PROTEINA CARNEBOLIC', 'PROTEINA NATURAL','12/12/2025','49.99');
+insert into producto values ('101','QUEMADOR DE GRASA','LIPOFIT EXTREME QUEMADOR DE GRASA', 'PASTILLAS QUEMADORAS DE GRASA','12/12/2025','49.99');
+insert into producto values ('102','QUEMADOR DE GRASA','CARTININA QUEMADOR', 'PASTILLAS QUEMADORAS DE GRASA','12/12/2025','59.99');
+insert into producto values ('103','CREATININA','CREATININA CELLTIC', 'PROTEINA GANADOR DE MASA','12/12/2025','49.99');
+insert into producto values ('104','GLUTAMINA','PROZIS L-GLUTAMINA ', 'COMPONENTE FUNDAMENTAL DE LAS PROTEÍNAS','12/12/2025','49.99');
+insert into producto values ('105','ARGININA',' L-ARGININA', '60 COMPRIMIDOS CON FÓRMULA VITAL B6, B12, ÁCIDO FÓLICO, SELENIO Y PIPERINA','12/12/2025','69.99');
+
+delete from producto
+select * from producto
+
+
+/*INSERCION DE DATOS EN LA TABLA PLAN_ALIMENTICIO*/
+insert into plan_alimenticio values ('7640','50GR DE QUEMADOR DE GRASA, 50GR DE POTASIO,3000GR DE PROTEINA');
+insert into plan_alimenticio values ('7641','50GR DE QUEMADOR DE GRASA, 50GR DE POTASIO,3000GR DE PROTEINA');
+insert into plan_alimenticio values ('7642','60GR DE QUEMADOR DE GRASA, 50GR DE POTASIO,3000GR DE PROTEINA');
+insert into plan_alimenticio values ('7643','50GR DE QUEMADOR DE GRASA, 50GR DE POTASIO,3000GR DE PROTEINA');
+insert into plan_alimenticio values ('7644','3000GR DE PROTEINA, 50GR DE QUEMADOR DE GRASA, 50GR DE POTASIO');
+insert into plan_alimenticio values ('7645','4000GR DE PROTEINA, 50GR DE QUEMADOR DE GRASA, 50GR DE POTASIO');
+insert into plan_alimenticio values ('7646','150GR DE PROTEINA, 50GR DE QUEMADOR DE GRASA, 50GR DE POTASIO');
+insert into plan_alimenticio values ('7647','250GR DE PROTEINA, 50GR DE QUEMADOR DE GRASA, 50GR DE POTASIO');
+insert into plan_alimenticio values ('7648','350GR DE PROTEINA, 50GR DE QUEMADOR DE GRASA, 50GR DE POTASIO');
+insert into plan_alimenticio values ('7649','450GR DE PROTEINA, 50GR DE QUEMADOR DE GRASA, 50GR DE POTASIO');
+
+select * from plan_alimenticio
+delete from plan_alimenticio
+
+
+
+/*INSERCION DE DATOS EN LA TABLA RUTINA*/
+insert into rutina values ('1321','000001','000001', '7640','1','20 ABDOMINALES,20 FLEXIONES,20 SENTADILLAS', '1 HORA','01/02/2019','28/02/2019');
+insert into rutina values ('1322','000001','000002', '7641','2','30 ABDOMINALES,30 FLEXIONES,30 SENTADILLAS', '2 HORA','03/03/2019','04/04/2019');
+insert into rutina values ('1323','000002','000003','7642','3',' 30 ABDOMINALES, 30 FLEXIONES,30 SENTADILLAS','1 HORA','06/04/2019','01/05/2019');
+insert into rutina values ('1324','000003','000004','7643','4','35 ABDOMINALES,35 FLEXIONES,35 SENTADILLAS', '2 HORA','05/05/2019','01/06/2019');
+insert into rutina values ('1325','000004','000001','7641','1','40 ABDOMINALES,40 FLEXIONES,40 SENTADILLAS', '1 HORA','01/02/2019','28/02/2019');
+insert into rutina values ('1326','000005','000001','7642','2',' 30 ABDOMINALES, 30 FLEXIONES,30 SENTADILLAS','1 HORA','03/03/2019','04/04/2019');
+insert into rutina values ('1327','000006','000002', '7643','3','20 ABDOMINALES,20 FLEXIONES,20 SENTADILLAS', '1 HORA','06/04/2019','01/05/2019');
+insert into rutina values ('1328','000007','000002','7640','1','30 ABDOMINALES,30 FLEXIONES,30 SENTADILLAS', '1 HORA','03/03/2019','04/04/2019');
+insert into rutina values ('1329','000008','000003','7641','2',' 30 ABDOMINALES, 30 FLEXIONES,30 SENTADILLAS','1 HORA','06/04/2019','01/05/2019');
+insert into rutina values ('1330','000009','000003', '7640','1','20 ABDOMINALES,20 FLEXIONES,20 SENTADILLAS', '1 HORA','01/02/2019','01/03/2019');
+insert into rutina values ('1331','000010','000004', '7640','1','30 ABDOMINALES,30 FLEXIONES,30 SENTADILLAS', '2 HORA','01/02/2019','01/03/2019');
+insert into rutina values ('1332','000002','000004','7640','1',' 30 ABDOMINALES, 30 FLEXIONES,30 SENTADILLAS','1 HORA','01/02/2019','01/03/2019');
+
+select * from rutina
+delete from rutina
+
+
+insert into venta values('1234','100','000001','000001','01/02/2019','PROTEINA O.O','49.99' );
+insert into venta values('1235','101','000002','000002','10/02/2019','PROTEINA O.O','49.99' );
+insert into venta values('1236','102','000003','000003','15/02/2019','PROTEINA O.O','59.99' );
+insert into venta values('1237','103','000004','000004','01/03/2019','PROTEINA O.O','49.99' );
+insert into venta values('1238','104','000005','000001','01/04/2019','PROTEINA O.O','49.99' );
+insert into venta values('1239','105','000006','000002','01/05/2019','PROTEINA O.O','69.99' );
+insert into venta values('1240','101','000007','000003','01/06/2019','PROTEINA O.O','49.99' );
+insert into venta values('1241','102','000008','000004','01/02/2020','PROTEINA O.O','49.99' );
+insert into venta values('1242','103','000009','000001','01/04/2020','PROTEINA O.O','59.99' );
+insert into venta values('1243','104','000010','000002','01/03/2020','PROTEINA O.O','49.99' );
+insert into venta values('1244','105','000001','000003','01/05/2020','PROTEINA O.O','49.99' );
+insert into venta values('1245','101','000001','000004','05/02/2020','PROTEINA O.O','69.99' );
+insert into venta values('1246','102','000002','000001','07/02/2020','PROTEINA O.O','49.99' );
+insert into venta values('1247','103','000003','000002','09/02/2020','PROTEINA O.O','49.99' );
+insert into venta values('1248','104','000004','000003','08/02/2020','PROTEINA O.O','59.99' );
+
+select * from venta
+
+insert into asistencia values ('1','000001','2019-02-05');
+insert into asistencia values ('2','000001','2019-06-24');
+insert into asistencia values ('3','000001','2019-02-05');
+insert into asistencia values ('4','000002','2019-01-01');
+insert into asistencia values ('5','000003','2019-02-11');
+insert into asistencia values ('6','000004','2019-03-30');
+insert into asistencia values ('7','000005','2019-12-10');
+insert into asistencia values ('8','000006','2019-02-22');
+insert into asistencia values ('9','000007','2019-06-06');
+insert into asistencia values ('10','000008','2019-02-26');
+insert into asistencia values ('11','000009','"2020-02-05');
+insert into asistencia values ('12','000010','2020-06-24');
+insert into asistencia values ('13','000001','2020-02-05');
+insert into asistencia values ('14','000001','2020-01-01');
+insert into asistencia values ('15','000002','2020-02-11');
+insert into asistencia values ('16','000003','2020-03-30');
+insert into asistencia values ('17','000004','2020-12-10');
+insert into asistencia values ('18','000005','2020-02-22');
+insert into asistencia values ('19','000006','2020-06-06');
+insert into asistencia values ('20','000008','2020-02-26');
+insert into asistencia values ('21','000007','2020-03-26');
+insert into asistencia values ('22','000001','2019-02-05');
+insert into asistencia values ('23','000009','2019-02-05');
+insert into asistencia values ('24','000010','2019-02-05');
+
+select * from asistencia

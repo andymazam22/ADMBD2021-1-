@@ -1,0 +1,41 @@
+/*CONSULTAS*/
+
+
+/*CANTIDAD DE CLIENTES QUE LOGRARON 3 RUTINAS DE ENTRENAMIENTO*/
+
+select 
+	RUTINA.ID_CLIENTE,
+	COUNT (NUMERO_RUTINA)AS CANTIDAD_DE_RUTINAS_HECHAS
+	FROM RUTINA  
+	GROUP BY 1 HAVING COUNT (NUMERO_RUTINA)>=2
+
+/*TOP DE VISITAS DE CLIENTES EN FORMA DESCENDENTE*/
+select
+	cliente.nombres_cliente, cliente.apellidos_cliente, count (asistencia.id_asistencia)as total_asistencia
+	from cliente
+	inner join asistencia on cliente.id_cliente  = asistencia.id_cliente
+	group by cliente.nombres_cliente, cliente.apellidos_cliente order by total_asistencia desc
+
+/*PRODUCTOS COMPRADOS POR CADA CLIENTE*/
+		select
+	cliente.nombres_cliente, cliente.apellidos_cliente, count (venta.id_venta)as productos_comprados
+	from cliente
+	inner join venta  on cliente.id_cliente  = venta.id_cliente
+	group by cliente.nombres_cliente, cliente.apellidos_cliente order by productos_comprados desc
+
+
+
+/*CANTIDAD DE RUTINAS DADAS POR CADA ENTRENADOR*/
+	select rutina.id_empleado,
+	count (rutina.id_rutina) as total_rutinas,
+	empleado.nombres_empleado,
+	empleado.apellidos_empleado
+	from rutina
+	inner join empleado on empleado.id_empleado = rutina.id_empleado
+	group by rutina.id_empleado, empleado.nombres_empleado, empleado.apellidos_empleado;
+	
+
+
+
+
+
